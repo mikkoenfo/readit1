@@ -10,8 +10,8 @@
     "build": "electron-builder -w",
     "win-cert": "electron-builder create-self-signed-cert -p enfoauth"
   },
-  "repository": "https://github.com/stackacademytv/master-electron",
-  "homepage": "https://github.com/stackacademytv/master-electron",
+  "repository": "https://github.com/mikkoenfo/readit1",
+  "homepage": "https://github.com/mikkoenfo/readit1",
   "keywords": [
     "Electron",
     "Master Electron",
@@ -20,9 +20,9 @@
   "author": "MMu",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^5.0.10",
+    "electron": "^5.0.13",
     "electron-builder": "^22.7.0",
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "electron-window-state": "^5.0.3"
