@@ -1,0 +1,47 @@
+{
+  "name": "Readit",
+  "version": "1.0.0",
+  "description": "Master Electron Project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard",
+    "build": "electron-builder -w",
+    "win-cert": "electron-builder create-self-signed-cert -p enfoauth"
+  },
+  "repository": "https://github.com/stackacademytv/master-electron",
+  "homepage": "https://github.com/stackacademytv/master-electron",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "MMu",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^5.0.10",
+    "electron-builder": "^22.7.0",
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  },
+  "build": {
+    "appId": "com.enfogroup.readit",
+    "copyright": "Copyright 2020 Enfo",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg"
+    },
+    "win": {
+      "certificateFile": "private/enfoauth.pfx",
+      "certificatePassword": "",
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "enfoauth"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}
